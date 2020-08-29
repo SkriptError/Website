@@ -17,6 +17,8 @@ a:hover {
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #4800ff;
   border: .1rem solid #fff;
+  width: 110px;
+  height: 110px;
   border-radius: 150px;
 }
 
@@ -57,10 +59,12 @@ body {
  * Header
  */
 .masthead {
+  float: right;
   margin-bottom: 2rem;
 }
 
 .masthead-brand {
+  float: right;
   margin-bottom: 0;
 }
 
@@ -78,6 +82,7 @@ body {
 }
 
 .nav-masthead .nav-link + .nav-link {
+  float: right;
   margin-left: 3rem;
 }
 
@@ -90,6 +95,7 @@ body {
 }
 
 .nav-masthead .active {
+  float: right;
   color: #fff;
   border-bottom-color: #fff;
 }
@@ -111,7 +117,7 @@ body {
   padding: 0 1.5rem;
 }
 .cover .btn-lg {
-  padding: .1rem 0.1rem;
+  padding: .1rem .1rem;
   font-weight: 700;
 }
 
