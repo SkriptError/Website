@@ -44,7 +44,7 @@ body {
 }
 
 .header-img {
-    position: fixed;
+    position: absolute;
     top: 24.7%;
     width: 100%;
     display:inline
