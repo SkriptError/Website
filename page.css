@@ -165,7 +165,6 @@ body {
     font-size: xx-large;
 }
 
-
 .update-box {
     transform: translateY(5%);
     width: 1400px;
@@ -233,6 +232,27 @@ body {
 }
 
 .linux-label {
+    margin-top: 25px;
+    float: top;
+    z-index: 99;
+    color: rgb(58, 58, 58);
+    font-weight: 700;
+}
+
+.appeal-box {
+    transform: translateY(5%);
+    width: 1400px;
+    height: 695px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 3px;
+    color: rgb(58, 58, 58);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+}
+
+.appeal-label {
     margin-top: 25px;
     float: top;
     z-index: 99;
