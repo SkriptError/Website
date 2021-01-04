@@ -259,3 +259,8 @@ body {
     color: rgb(58, 58, 58);
     font-weight: 700;
 }
+
+.reason {
+    float: right;
+    margin-left: 100px;
+}
