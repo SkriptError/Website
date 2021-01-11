@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="The Latest Updates For Aero Client">
+        <title>Aero Client Staff Guide</title>
+        <link rel="icon" href="favicon.ico">
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #151515;
+}
+
+.pseudo-body {
+    left: 0px;
+    top: 0px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 0;
+}
+
+#header {
+    padding: 25px 25px;
+}
+
+.header-tabs {
+    margin-top: 15px;
+    float: right;
+}
+
+.tab {
+    color: rgba(255, 255, 255, 0.527); 
+    text-decoration: none;
+    padding: 15px 15px;
+    letter-spacing: 1px;
+    transition: 0.1s;
+    z-index: 100;
+}
+
+.tab:hover {
+    color: white;
+}
+
+.text-1 {
+    color: white;
+    font-weight: 300;
+    padding: 10px 25px;
+    z-index: 99;
+}
+
+.background-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display:inline
+}
+
+.name-1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 26px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+    transform: translateY(-40%);
+    display:inline
+}
+
+.name-2 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 26px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+    transform: translateY(-40%);
+    display:inline
+}
+
+.description {
+    padding: 25px 0px;
+    font-weight: 500;
+    transform: translateY(-0%);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.text-2 {
+    margin-top: 100px;
+    padding: 0px 0px 20px 0px;
+    overflow: hidden;
+    transform: translateY(-130%);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+#centered-items {
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+    transform: translateY(-5%);
+}
+
+.download-button {
+    width: 200px;
+    height: 30px;
+    border-radius: 12px;
+    background-color: rgba(0, 252, 42, 0.658);
+    padding: 25px 70px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 19pt;
+    text-shadow: 1px 1px #000000;
+    -webkit-app-region: no-drag;
+    z-index: 5;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+  
+.download-button:hover {
+    background-color:rgba(0, 252, 42, 0.753);
+    cursor: pointer;
+    transform: scale(1.03);
+    box-shadow: rgba(0, 252, 42, 0.753);
+}
+
+.logo {
+    border-radius: 100%;
+    width: 150px; 
+    height: 150px;
+    margin-top: 150px;
+}
+
+#name {
+    position: relative;
+}
+
+.error-1 {
+    color: white;
+    font-weight: 700;
+    font-size: 26px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+    transform: translateY(-40%);
+    display:inline
+}
+
+.error-2 {
+    color: white;
+    font-weight: 300;
+    font-size: 26px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+    transform: translateY(-40%);
+    display:inline
+}
+
+.faq-box {
+    transform: translateY(5%);
+    width: 1400px;
+    height: 705px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 3px;
+    color: rgb(58, 58, 58);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+}
+
+.faq-label {
+    transform: translateY(50%);
+    font-size: xx-large;
+}
+
+.update-box {
+    transform: translateY(5%);
+    width: 1400px;
+    height: 2195px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 3px;
+    color: rgb(58, 58, 58);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+}
+
+.staffguide-box {
+    transform: translateY(5%);
+    width: 1400px;
+    height: 1120px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 3px;
+    color: rgb(58, 58, 58);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+}
+
+.update-label {
+    margin-top: 25px;
+    float: top;
+    z-index: 99;
+    color: rgb(58, 58, 58);
+    font-weight: 700;
+}
+
+.left-items {
+    margin-left: 100px;
+    float: left;
+    color:rgb(58, 58, 58);
+    z-index: 100;
+}
+
+.changelogs {
+    width: 1200px;
+    margin-left: 15px;
+}
+
+.mac-box {
+    transform: translateY(5%);
+    width: 1400px;
+    height: 695px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 3px;
+    color: rgb(58, 58, 58);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+}
+
+.mac-label {
+    margin-top: 25px;
+    float: top;
+    z-index: 99;
+    color: rgb(58, 58, 58);
+    font-weight: 700;
+}
+
+.linux-box {
+    transform: translateY(5%);
+    width: 1400px;
+    height: 695px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 3px;
+    color: rgb(58, 58, 58);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+}
+
+.linux-label {
+    margin-top: 25px;
+    float: top;
+    z-index: 99;
+    color: rgb(58, 58, 58);
+    font-weight: 700;
+}
+
+.appeal-box {
+    transform: translateY(5%);
+    width: 1400px;
+    height: 695px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 3px;
+    color: rgb(58, 58, 58);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+}
+
+.appeal-label {
+    margin-top: 25px;
+    float: top;
+    z-index: 99;
+    color: rgb(58, 58, 58);
+    font-weight: 700;
+}
+
+.banlist-box {
+    transform: translateY(5%);
+    width: 700px;
+    height: 695px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 3px;
+    color: rgb(58, 58, 58);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+    overflow-y: scroll;
+}
+
+.banlist-label {
+    margin-top: 25px;
+    float: top;
+    z-index: 99;
+    color: rgb(58, 58, 58);
+    font-weight: 700;
+}
+
+.reason {
+    float: right;
+    margin-left: 100px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgb(29, 29, 29);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #3b00d1;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4800ff;
+  }
+    </style>
+    
+    
+    <img draggable="false" class="background-img" src="img/background-new.png">
+    <body>
+        <div class="pseudo-body">
+        <div id="header">
+            <div class="header-tabs">
+                <a href="https://aeroclient.net" class="tab">HOME</a>
+                <a href="/faq" class="tab">FAQ</a>
+                <a href="/updates" class="tab">UPDATES</a>
+                <a href="/bans" class="tab">BANS</a>
+                <a target="_blank" href="https://invite.gg/AeroClient" class="tab">DISCORD</a>
+            </div>
+                <div id="home">
+                    <h4 class="text-1">Powered by mnDevs</h4>
+                    <div class="staffguide-box">
+                    <div class="left-items">
+                        <h2 class="update-label">Aero Client Staff Guide</h2>
+                            <p>NOTICE: IF YOU LEAK THIS, YOU WILL BE BLACKLISTED.</p>
+                            <br>
+                            <u><h3>Welcome to the Aero Client Staff Team!</h3></u>
+                            <b>You are one of the lucky people to get staff on Aero Client, and you are now here!</b>
+                            <br>
+                            <div class="changelogs">
+                                <p>Let's start by going over the basics.</p>
+                            </div>
+                            <div class="changelogs">
+                                <u><h3>What do you do as Aero Client Staff?</h3></u>
+                                <p>As some of you know, Aero Client has a logging system meant for debugging purposes, but we also log if people are autoclicking over a certain amount of CPS, meaning a client bug could be related to their cheats which is punishable.</p>
+                                <p>Your job is to also make sure that people aren't cheating on the client, as well as helping peope in #support in the main discord. </p>
+                            </div>
+                        <hr></hr>
+                        <h2 class="update-label">Support Channel</h2>
+                            <p>This will go over what you as a staff member are required to do in the support channel.</p>
+                            <u><h3>Channel: #support (Main Discord)</h3></u>
+                            <b>The support channel is one of the most active channels on the discord, meaning that your help will often be needed there.</b>
+                            <p>Before assisting someone in the support channel, ask them if they've read over #issue-fixes, if not then direct them there, if they have then assist them.</p>
+                            <p>If someone's client crashes, ask them to send their client logs in the Support Channel, Index it using our Log Indexer, then forward it to Moose or Arcane, they will look into a fix for it.</p>
+                            <p>If someone's client doesn't launch, ask them to send the Launcher Logs to Arcane. Never have them send Launcher Logs in the Support Channel.</p>
+                            <b>They can get both of these logs by going in Settings on the launcher and open their desired logs via the bottom middle options.</b>
+                            <br>
+                            <hr></hr>
+                            <h2 class="update-label">Checking Players for Cheats</h2>
+                            <p>This will go over what you as a staff member are required to do as far as checking players for cheats.</p>
+                            <u><h3>Channel: #support (Main Discord) & #reports (Staff Discord)</h3></u>
+                            <b>As of now, the only way to check if someone is cheating is by indexing their logs using our Log Indexer Tool that can be found in #staff-tools via the Staff Discord.</b>
+                            <p>When you go to index their Client Logs, make sure the logs file is named "client_logs.txt". When you run start.bat, it will search the entire logs file for our special key, if the key is found it will be shown, when this happens go in #reports in the Staff Discord, and paste the Key, you'll need to get their Username and the Date and Time they were detected, it will show what line it was on so you can easily find the results.</p>
+                            <p>If no results are found while indexing the Client Logs, it will just close and not display anything.</p>
+                            <hr></hr>
+                            <h2>Thank you for reading the Aero Client Staff Guide, you can re-read this for future reference at any time! This may get updated at any time.</h2>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
