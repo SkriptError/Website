@@ -362,7 +362,6 @@ body {
 }
 
 .changes-box {
-    transform: translateY(5%);
     width: 100%;
     height: 6355px;
     background-color: rgb(250, 250, 250);
