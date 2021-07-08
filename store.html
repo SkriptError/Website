@@ -1,863 +1,340 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/html">
 
+<!-- Mirrored from www.lunar.gg/client/store/emotes by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Jun 2019 23:54:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lunar Client</title>
+<meta name="description" content="Lunar Client is Minecraft's original and free client-side anticheat that allows you to play the game the way it was meant to be played: fairly.">
+<link rel="icon" href="static/images/favicon.ico">
+<link rel="stylesheet" href="static/css/bootstrap.css">
+<link rel="stylesheet" href="static/css/font-awesome.css">
+<link rel="stylesheet" href="static/css/autocomplete.css">
+<link rel="stylesheet" href="static/css/fonts.css">
+<link rel="stylesheet" href="static/css/style.css">
+<link rel="stylesheet" href="static/css/schedule.css">
+<link rel="stylesheet" href="static/css/flags.css">
+<style>
+.modal-body {
+    padding-top: 5px;
+}
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"ade4f02621",applicationID:"507442138"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[u.now()].concat(f(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(8),f=t(9),c=t("ee").get("tracer"),u=t("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){s[e]=i(p+e,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){function r(){return f.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,f=t(10);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],4:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],5:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof m&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,d("timing",["fi",e,n])}}function f(t){d("pageHide",[p.now(),t])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,u,s,d=t("handle"),p=t("loader"),l=t(7),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,h=["click","keydown","mousedown","pointerdown","touchstart"];h.forEach(function(t){document.addEventListener(t,a,!1)})}l(f)}},{}],6:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],7:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],8:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],9:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],10:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var f=e(i),c=v(n),u=c.length,s=0;s<u;s++)c[s].apply(f,r);var p=d[w[n]];return p&&p.push([b,n,r,f]),f}}function o(t,e){y[t]=v(t).concat(e)}function m(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function v(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:e,buffer:h,abort:f,aborted:!1};return b}function o(t){return u(t,c,a)}function a(){return new r}function f(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",u=t("gos"),s=t(8),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!R++){var t=M.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();f("mark",["onload",n+M.offset],null,"api"),f("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){f("mark",["domContent",a()+M.offset],null,"api")}var a=t(3),f=t("handle"),c=t(8),u=t("ee"),s=t(6),d=t(4),p=t(2),l=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,g="addEventListener",h="attachEvent",y=m.XMLHttpRequest,w=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1209.min.js"},O=y&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(5),v[g]?(v[g]("DOMContentLoaded",o,!1),m[g]("load",r,!1)):(v[h]("onreadystatechange",i),m[h]("onload",r)),f("mark",["firstbyte",a.getLastTimestamp()],null,"api");var R=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,c],s],t)}f(n+"start",[o,a,c],s,u);try{return p=e.apply(a,o)}catch(m){throw f(n+"err",[o,a,m],s,u),m}finally{f(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var f,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],f=t[c],a(f)||(t[c]=n(f,s?c+r:r,i,c,o))}function f(n,r,o,a){if(!m||e){var f=m;m=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}m=f}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function f(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function c(t,e,n){var r=t[e];t[e]=f(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(9),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;e.exports=r,e.exports.wrapFunction=f,e.exports.wrapInPlace=c,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+.modal-footer {
+    padding-bottom: 5px;
+}
 
-            <title>Aero Client | Welcome</title>
-    
-    <link rel="icon" href="favicon.ico">
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+.form-check-label {
+    padding-left: 1px;
+}
 
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-P7SMXD9');</script>
-    <!-- End Google Tag Manager -->
+.client-name {
+    font-size: 34px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 0;
+    padding-left: 10px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: none;
+}
 
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
+.recent-payment-face {
+    margin: 0 0 10px;
+}
 
-        _gaq.push(['_setAccount', 'UA-36735942-3']);
-        _gaq.push(['_trackPageview']);
+.store .table-holder {
+    overflow: hidden;
+    border-radius: 5px
+}
 
-                _gaq.push(['b._setAccount', 'UA-134796025-2']);
-        _gaq.push(['b._trackPageview']);
-        
-        (function () {
-            var ga = document.createElement('script');
-            ga.type = 'text/javascript';
-            ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
-                '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(ga, s);
-        })();
+.store .table {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .13);
+    margin: 0 0 19px;
+    display: table;
+    table-layout: fixed;
+}
 
-    </script>
-    
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-        
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-        
-    
-        <!-- Generated via SASS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    
-        <!-- FontAwesome -->
-        <script src="https://kit.fontawesome.com/9bdb7e3cf7.js" crossorigin="anonymous"></script>
-        <link href="/template-assets/oldsite.css?updated=7785c13660d69e50a9f2cf67fc7339d4f1b4bce7a36cd577bd3f639d5fe6f986" rel="stylesheet">
-            <style>
-            .sub-cat-sel {
-                background-color: #db4040;
-                color: red;
-            }
-            .sub-cat {
-                background-color: #F5F6F5;
-                color: rgb(94, 94, 94);
-            }
-            .sub-cat-sel:hover {
-                color: white !important;
-            }
-        </style>
-        
-        <!-- Christmas
-        <style>
-            #particles-js {
-              position: absolute;
-              width: 100%;
-              height: 40vh;
-            }
-            @media (max-width:768px) {
-                nav {
-                    background-color: rgba(0, 0, 0, 0.68) !important;
-                }
-            }
-            nav {
-                background-color: #00000040;
-            }
-            nav .red-button {
-                background: none;
-            }
-            nav .red-button:hover {
-                background-color: #00000040;
-            }
-            #nav_links a:hover {
-                background-color: #00000040;
-            }
-            .card {
-                box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
-                border-radius: 20px;
-            }
-            .category {
-                border-top-left-radius: 20px;
-                border-top-right-radius: 20px;
-            }
-            .category-bottom {
-                height: 60px;
-                border-bottom-right-radius: 20px !important;
-                border-bottom-left-radius: 20px !important;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-weight: 600 !important;
-                font-size: large;
-                color: #646464;
-            }
-            .category-bottom-creator {
-                color: white;
-            }
-            body {
-                background-color: #f2f2f2 !important;
-                overflow-x: hidden;
-            }
-            .category-card-row .card {
-                transition: 0.45s;
-            }
-            .category-card-row .card:hover {
-                box-shadow: 0 5px 10px 0 rgb(0 0 0 / 30%);
-            }
-            #christmas-header {
-                height: 40vh;
-                min-height: 400px;
-            }
-            @media (max-width: 1100px) and (min-width: 770px) {
-                #christmas-header {
-                    margin-top: -130px !important;
-                }
-            }
-            .snow-lower {
-                top: 30vh;
-                bottom: unset;
-                position: absolute;
-                width: 100%;
-                height: 277px;
-                object-fit: cover;
-                object-position: left;
-            }
-            .package .card-img-top {
-                border-top-left-radius: 15px;
-                border-top-right-radius: 15px;
-            }
-            .candy {
-                border: 8px solid #db4040;
-                border-image: repeating-linear-gradient( 135deg, #db4040, #db4040 10px, white 10px, white 20px ) 8;
-            }
-            a {
-                color: #23635B;
-            }
-            a:hover {
-                color: #174e47;
-            }
-            .navbar-collapse {
-                top: 55px;
-                z-index: 999;
-                position: absolute;
-                flex-grow: unset;
-                width: 100%;
-                background-color: rgba(0, 0, 0, 0.68);
-                left: 0px;
-            }
-            .checkout {
-                background-color: white;
-            }
-        </style> -->
-        
-        <style>
-            .dark-mode body {
-                background-color: #191919 !important;
-            }
-            .dark-mode .card {
-                background-color: #131313;
-                color: white;
-            }
-            .dark-mode .card i {
-                color: white;
-            }s
-            .dark-mode .package i {
-                color: white;
-            }
-            .dark-mode nav {
-                background-color: #141414;
-            }
-            .dark-mode footer {
-                background-color: #141414;
-            }
-            .dark-mode .username i {
-                color: white !important;
-            }
-            .dark-mode .text-decoration-none {
-                color: white !important;
-            }
-            .dark-mode .sub-cat {
-                background-color: #1a1a1a;
-                color: white;
-            }
-        </style>
-        <script>
-        if (localStorage.getItem('lc-dark') === '1') {
-             document.documentElement.classList.add('dark-mode');
-        } else {
-            document.documentElement.classList.add('theme-light');
-        }
-    </script>
+.store .table thead {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, .17);
+    letter-spacing: 1.8px;
+}
+
+.store .table thead.pricing {
+    background-color: #17aced
+}
+
+.store .table tbody {
+    font-size: 16px;
+}
+
+.store .table tbody tr:nth-child(odd) {
+    background: #fff;
+}
+
+.store .table tbody tr:nth-child(even) {
+    background: #fafafa;
+}
+
+.store .table tbody td {
+    padding: 6px 15px 9px;
+}
+</style>
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7SMXD9"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <!-- <div id="particles-js"></div> -->
-            <script>
-</script>
-<nav class="navbar navbar-dark navbar-expand-md">
-    <div class="container-fluid">
-        <!-- Branding -->
-        <!-- TODO: Fix navbar-brand class messing up margin. -->
-        <a class="col navbar-brand mr-0 p-0 thing1" href="/">
-            <img class="logo" src="assets/img/favicon.ico" draggable="false">
-            Aero Client
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        <!-- Right Buttons -->
-        <div id="nav_links" class="col-7 d-none d-md-block" style="text-align: center;">
-            
-        
-                                    
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <a type="button" class="thing1 py-3 btn " style="color: white" href="/category/lunar">Cloaks</a>
-                                                                <a type="button" class="thing1 py-3 btn " style="color: white" href="/category/emotes">Emotes</a>
-                                                                                        <a type="button" class="thing1 py-3 btn " style="color: white" href="/category/partners">Partners</a>
-                                                                                                            <a type="button" class="thing1 py-3 btn " style="color: white" href="/category/lunarmasks">Masks</a>
-                                                                <a type="button" class="thing1 py-3 btn " style="color: white" href="/category/lunarbandannas">Bandannas</a>
-                                                                <a type="button" class="thing1 py-3 btn " style="color: white" href="/category/lunarhats">Hats</a>
-                                                                <a type="button" class="thing1 py-3 btn " style="color: white" href="/category/wings">Wings</a>
-                                                                                                                                                                                                                                    </div>
-        <div class="col d-none d-md-block ml-0 pr-0" style="text-align: right;">
-                <button class="btn red-button thing1 thing 2 p-1 dark-mode-selector" style="width: 35px;">
-                    <i class="far fa-moon"></i>
-                </button>
-                <div class="dropdown text-right" style="display: inline;">
-                    <button class="btn red-button thing1 thing2 dropdown-toggle p-1" type="button"
-                            id="currencyButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-dollar-sign"></i>
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="currencyButton">
-                                                                        <a class="dropdown-item  >"
-                           href="?currency=AUD">AUD</a>
+<div class="wrapper">
+<header class="header">
+<div class="container">
+<div class="row">
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
 
-                                                                                                <a class="dropdown-item  >"
-                           href="?currency=BRL">BRL</a>
+<a class="navbar-brand mr-3" href="https://lunarclient.xyz/">
+<img src="static/images/logos/text.svg" alt="Text Logo">
+</a>
+<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
 
-                                                                                                <a class="dropdown-item  >"
-                           href="?currency=CAD">CAD</a>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a class="nav-link" href="https://lunarclient.xyz/">
+Client
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://lunarclient.xyz/bans">Bans</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://lunarclient.xyz/staff">Staff</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://lunarclient.xyz/client/store/emotes">Store</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
 
-                                                                                                                                                <a class="dropdown-item  >"
-                           href="?currency=DKK">DKK</a>
+</div>
+</nav>
+</div>
+</div>
+</header>
+<div class="container">
+<main class="main">
+<div class="store">
+<section class="main">
+<div class="block-sections">
+<div class="img-title">
+<div class="bg-stretch" style="overflow: hidden; border-radius: 5px">
+<img src="static/images/footer-banner-bg.png" alt="Banner">
+</div>
+<img src="static/images/logos/client.png" width="64" height="58" alt="Logo">
+<h2 class="client-name">Lunar Client</h2>
+</div>
+</div>
+<section id="content">
+<div class="tabs-section">
+<div class="block">
+<ul class="tab-item nav nav-tabs">
+<li>
+<a href="emotes" class="active">Emotes</a>
+</li>
+<li>
+<a href="wings" class="">Wings</a>
+</li>
+</ul>
+</div>
+<div class="row">
+<div class="col-md-9">
+<div class="row">
+<div class="col-md-4">
+<div class="block" style="">
+<img src="static/images/store/client_emotes/wave.gif" class="card-img-top" style="overflow: hidden; border-radius: 7px;" alt="Wave">
+<div class="card-body text-center">
+<h6 class="card-title text-center">Wave</h6>
+<button type="button" class="btn btn-success store-buy-btn" data-package="17" data-samm="False">Purchase for $5</button>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="block" style="">
+<img src="static/images/store/client_emotes/t-pose.gif" class="card-img-top" style="overflow: hidden; border-radius: 7px;" alt="T Pose">
+<div class="card-body text-center">
+<h6 class="card-title text-center">T Pose</h6>
+<button type="button" class="btn btn-success store-buy-btn" data-package="16" data-samm="False">Purchase for $10</button>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="block" style="">
+<img src="static/images/store/client_emotes/shrug.gif" class="card-img-top" style="overflow: hidden; border-radius: 7px;" alt="Shrug">
+<div class="card-body text-center">
+<h6 class="card-title text-center">Shrug</h6>
+<button type="button" class="btn btn-success store-buy-btn" data-package="15" data-samm="False">Purchase for $10</button>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="block" style="">
+<img src="static/images/store/client_emotes/dab.gif" class="card-img-top" style="overflow: hidden; border-radius: 7px;" alt="Dab">
+<div class="card-body text-center">
+<h6 class="card-title text-center">Dab</h6>
+<button type="button" class="btn btn-success store-buy-btn" data-package="11" data-samm="False">Purchase for $10</button>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="block" style="">
+<img src="static/images/store/client_emotes/facepalm.gif" class="card-img-top" style="overflow: hidden; border-radius: 7px;" alt="Facepalm">
+<div class="card-body text-center">
+<h6 class="card-title text-center">Facepalm</h6>
+<button type="button" class="btn btn-success store-buy-btn" data-package="12" data-samm="False">Purchase for $10</button>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="block" style="">
+<img src="static/images/store/client_emotes/floss.gif" class="card-img-top" style="overflow: hidden; border-radius: 7px;" alt="Floss">
+<div class="card-body text-center">
+<h6 class="card-title text-center">Floss</h6>
+<button type="button" class="btn btn-success store-buy-btn" data-package="13" data-samm="False">Purchase for $10</button>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="block" style="">
+<img src="static/images/store/client_emotes/hands-up.gif" class="card-img-top" style="overflow: hidden; border-radius: 7px;" alt="Hands Up">
+<div class="card-body text-center">
+<h6 class="card-title text-center">Hands Up</h6>
+<button type="button" class="btn btn-success store-buy-btn" data-package="14" data-samm="False">Purchase for $10</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-3">
+<div class="block">
+<h2>Monthly Goal</h2>
+<div class="progress" style="height: 20px; border-radius: 7px">
+<div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 9%"></div>
+</div>
+</div>
+<div class="block">
+<h2>Recent Purchases</h2>
+<div class="recent-payment-face avatar-box">
+<a href="#" class="avatar">
+<img src="https://crafatar.com/renders/body/0c0f23d0be464059a895892e989fbaca?overlay" alt="soccer911" height="40" width="17" style="object-fit: contain;" class="avatar-half">
+<b class="name-color-master" style="margin-left: 5px">ItsVops</b>
+</a>
+</div>
+<div class="recent-payment-face avatar-box">
+<a href="#" class="avatar">
+<img src="https://crafatar.com/renders/body/0ecc9fd005b54166b49785cedee580b7?overlay" alt="RluxVEVO" height="40" width="17" style="object-fit: contain;" class="avatar-half">
+<b class="name-color-master" style="margin-left: 5px">STOCKED</b>
+</a>
+</div>
+<div class="recent-payment-face avatar-box">
+<a href="#" class="avatar">
+<img src="https://crafatar.com/renders/body/d190fd94dc704677b641b0374f9590a7?overlay" alt="dopeASF" height="40" width="17" style="object-fit: contain;" class="avatar-half">
+<b class="" style="margin-left: 5px">DripW</b>
+</a>
+</div>
+<div class="recent-payment-face avatar-box">
+<a href="#" class="avatar">
+<img src="https://crafatar.com/renders/body/d80622a545a940c182ebd9fe1b0dc839?overlay" alt="GoogleDev" height="40" width="17" style="object-fit: contain;" class="avatar-half">
+<b class="" style="margin-left: 5px">oBrave</b>
+</a>
+</div>
+<div class="recent-payment-face avatar-box">
+<a href="#" class="avatar">
+<img src="https://crafatar.com/renders/body/acc07a7d84794e158ad88533735d8aef?overlay" alt="Tangula" height="40" width="17" style="object-fit: contain;" class="avatar-half">
+<b class="" style="margin-left: 5px">DoesMyNameMatter</b>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</div>
+</main>
+</div>
+</div>
+<footer class="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
 
-                                                                                                <a class="dropdown-item  >"
-                           href="?currency=EUR">EUR</a>
-
-                                                                                                                                                                                                                                                                                                                                                                                                <a class="dropdown-item  >"
-                           href="?currency=NOK">NOK</a>
-
-                                                                                                <a class="dropdown-item  >"
-                           href="?currency=NZD">NZD</a>
-
-                                                                                                                                                <a class="dropdown-item  >"
-                           href="?currency=PLN">PLN</a>
-
-                                                                                                <a class="dropdown-item  >"
-                           href="?currency=GBP">GBP</a>
-
-                                                                                                                                                <a class="dropdown-item  >"
-                           href="?currency=SEK">SEK</a>
-
-                                                                                                                                                                                                                                                                                                <a class="dropdown-item  active >"
-                           href="?currency=USD">USD</a>
-
-                                                                                                                                                                                                                                                                    </div>
-                </div>
-                <div class="dropdown d-none d-sm-block d-lg-inline-block mt-lg-0">
-                                            <button class="btn red-button thing1 thing2 dropdown-toggle disabled p-1" type="button"
-                                id="basketDropdownButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                        </button>
-                                    </div>
-                                                    <a class="btn red-button thing1 thing2 p-1" href="/login">LOGIN</a>
-                        </div>
-                <div class="collapse navbar-collapse" id="navbarNav" style="flex-grow: unset">
-            <ul class="navbar-nav d-md-none text-center nav_links">
-                
-                                                
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="nav-item">
-                                                    <a type="button" class="btn my-3 " style="color: white; width: 100%;" href="/category/lunar">Cloaks</a>
-                                            </li>
-                                    <li class="nav-item">
-                                                    <a type="button" class="btn my-3 " style="color: white; width: 100%;" href="/category/emotes">Emotes</a>
-                                            </li>
-                                    <li class="nav-item">
-                                                                                    <a type="button" class="btn my-3 " style="color: white; width: 100%;" href="/category/partners">Partners</a>
-                                                                                                        </li>
-                                    <li class="nav-item">
-                                                    <a type="button" class="btn my-3 " style="color: white; width: 100%;" href="/category/lunarmasks">Masks</a>
-                                            </li>
-                                    <li class="nav-item">
-                                                    <a type="button" class="btn my-3 " style="color: white; width: 100%;" href="/category/lunarbandannas">Bandannas</a>
-                                            </li>
-                                    <li class="nav-item">
-                                                    <a type="button" class="btn my-3 " style="color: white; width: 100%;" href="/category/lunarhats">Hats</a>
-                                            </li>
-                                    <li class="nav-item">
-                                                    <a type="button" class="btn my-3 " style="color: white; width: 100%;" href="/category/wings">Wings</a>
-                                            </li>
-                                    <li class="nav-item">
-                                                                                                </li>
-                                    <li class="nav-item">
-                                                                                                </li>
-                                    <li class="nav-item">
-                                                                                                </li>
-                              <li class="nav-item m-3 row" style="justify-content: space-evenly">
-                 <button class="dark-mode-selector btn red-button thing1 thing 2 p-1" style="width: 35px;">
-                    <i class="far fa-moon"></i>
-                </button>
-                <div class="dropdown text-right" style="display: inline;">
-                    <button class="btn red-button thing1 thing2 dropdown-toggle p-1" type="button"
-                            id="currencyButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-dollar-sign"></i>
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="currencyButton">
-                                                                        <a class="dropdown-item  >"
-                           href="?currency=AUD">AUD</a>
-
-                                                                                                <a class="dropdown-item  >"
-                           href="?currency=BRL">BRL</a>
-
-                                                                                                <a class="dropdown-item  >"
-                           href="?currency=CAD">CAD</a>
-
-                                                                                                                                                <a class="dropdown-item  >"
-                           href="?currency=DKK">DKK</a>
-
-                                                                                                <a class="dropdown-item  >"
-                           href="?currency=EUR">EUR</a>
-
-                                                                                                                                                                                                                                                                                                                                                                                                <a class="dropdown-item  >"
-                           href="?currency=NOK">NOK</a>
-
-                                                                                                <a class="dropdown-item  >"
-                           href="?currency=NZD">NZD</a>
-
-                                                                                                                                                <a class="dropdown-item  >"
-                           href="?currency=PLN">PLN</a>
-
-                                                                                                <a class="dropdown-item  >"
-                           href="?currency=GBP">GBP</a>
-
-                                                                                                                                                <a class="dropdown-item  >"
-                           href="?currency=SEK">SEK</a>
-
-                                                                                                                                                                                                                                                                                                <a class="dropdown-item  active >"
-                           href="?currency=USD">USD</a>
-
-                                                                                                                                                                                                                                                                    </div>
-                </div>
-                <div class="dropdown mt-lg-0">
-                                            <button class="btn red-button thing1 thing2 dropdown-toggle disabled p-1" type="button"
-                                id="basketDropdownButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            CART
-                        </button>
-                                    </div>
-                <div class="dropdown">
-                                                                <a class="btn red-button thing1 thing2 p-1" href="/login">LOGIN</a>
-                                    </div>
-              </li>
-            </ul>
-          </div>
-    </div>
-</nav>            <!-- <style>
-            #christmas-header {
-                 height: 80vh;
-            }
-            .snow-lower {
-                bottom: unset;
-                position: absolute;
-                top: 70vh;
-            }
-            #particles-js {
-                height: 80vh;
-            }
-        </style> -->
-                        <!-- Jumbotron -->
-<div style="background-image: url('https://storeassets.lunarclientcdn.com/background.webp');" class="d-flex justify-content-center align-items-center nav-drop fix-bg">
-    <div class="container d-flex justify-content-center align-items-center">
-        <div style="color: white; text-align: center;" class="col-lg-6 col-md-9 col-12 py-5">
-            <div class="notification">
-                            </div>
-            <h1><span>Lunar Client</span> Store</h1>
-            <h5 style="font-weight: 200;">Welcome to the Lunar Client Store where you can buy <span>emotes</span>, <span>cloaks</span>, <span>wings</span>, <span>bandannas</span>, <span>hats</span>, and <span>more</span>.</h5>
-        </div>
-    </div>
-</div>            <div class="container" style="min-height: 100%;">
-            <!-- Top Row -->
-            <div class="row my-4 category-card-row" style="justify-content: center;">
-                <!-- View Emotes -->
-                <div class="col-12 col-md-12 col-lg-3 mb-3">
-                    <div class="card">
-                        <!-- Image -->
-                        <img src="https://storeassets.lunarclientcdn.com/emotes_display.webp" class="card-img-top category">
-                        <!-- Text -->
-                        <a class="category-bottom p-1 text-center btn red-button stretched-link" href="/category/emotes">
-                            <div class="thing1">EMOTES</div>
-                        </a>
-                    </div>
-                </div>
-                <!-- View Partners -->
-                <div class="col-12 col-md-12 col-lg-6 mb-3">
-                    <div class="card">
-                        <!-- Image -->
-                        <img src="https://storeassets.lunarclientcdn.com/partners_display.webp" class="card-img-top category">
-                        <!-- Text -->
-                                                <a class="category-bottom category-bottom-creator p-1 text-center btn red-button stretched-link" href="/category/partners">
-                            <div class="thing1">
-                                                                VIEW PARTNERS
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!-- View Wings -->
-                <div class="col-12 col-md-12 col-lg-3 mb-3">
-                    <div class="card">
-                        <!-- Image -->
-                        <img src="https://storeassets.lunarclientcdn.com/wings_display.webp" class="card-img-top category">
-                        <!-- Text -->
-                        <a class="category-bottom p-1 text-center btn red-button stretched-link" href="/category/wings">
-                            <div class="thing1">WINGS</div>
-                        </a>
-                    </div>
-                </div>
-                <!-- View Cloaks -->
-                <div class="col-12 col-md-6 col-lg-3 mb-3">
-                    <div class="card">
-                        <!-- Image -->
-                        <img src="https://storeassets.lunarclientcdn.com/masks_display.webp" class="card-img-top category" style="filter: grayscale(0%);">
-                        <!-- Text -->
-                        <a class="category-bottom p-1 text-center btn red-button stretched-link" href="/category/lunarmasks">
-                            <div class="thing1">MASKS</div>
-                        </a>
-                    </div>
-                </div>
-                <!-- View Cloaks -->
-                <div class="col-12 col-md-6 col-lg-3 mb-3">
-                    <div class="card">
-                        <!-- Image -->
-                        <img src="https://storeassets.lunarclientcdn.com/bandannas_display.webp" class="card-img-top category" style="filter: grayscale(0%);">
-                        <!-- Text -->
-                        <a class="category-bottom p-1 text-center btn red-button stretched-link" href="/category/lunarbandannas">
-                            <div class="thing1">BANDANNAS</div>
-                        </a>
-                    </div>
-                </div>
-                <!-- View Cloaks -->
-                <div class="col-12 col-md-6 col-lg-3 mb-3">
-                    <div class="card">
-                        <!-- Image -->
-                        <img src="https://storeassets.lunarclientcdn.com/cloaks_display.webp" class="card-img-top category">
-                        <!-- Text -->
-                        <a class="category-bottom p-1 text-center btn red-button stretched-link" href="/category/lunar">
-                            <div class="thing1">CLOAKS</div>
-                        </a>
-                    </div>
-                </div>
-                <!-- View Hats -->
-                <div class="col-12 col-md-6 col-lg-3 mb-3">
-                    <div class="card">
-                        <!-- Image -->
-                        <img src="https://storeassets.lunarclientcdn.com/hats_display.webp" class="card-img-top category" style="filter: grayscale(0%);">
-                        <!-- Text -->
-                        <a class="category-bottom p-1 text-center btn red-button stretched-link" href="/category/lunarhats">
-                            <div class="thing1">HATS</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- Middle Row -->
-            <div class="row my-4">
-                <!-- Purchase Support -->
-                <div class="col-12 col-md-6 col-lg-6">
-                    <div class="card" style="width: 100%; height: 100%">
-                        <div class="card-body">
-                            <h2 class="card-title text-center">
-                                <i class="fas fa-question-circle pr-1"></i>
-                                Need Purchase Support?
-                            </h5>
-                            <p class="card-text">
-                                Our support team is available around the clock to ensure that you
-                                get help with your issues as soon as possible.
-                            </p>
-                            <p class="card-text">
-                                Please allow up to 24 hours between response to allow your issue
-                                to be properly handled.
-                            </p>
-                            <p class="card-text">
-                                To get started, create a <a href="https://lunar.gg/tickets/create">support ticket</a> on our website.
-                            </p>
-                            <p class="card-text">
-                                Alternatively, you could also create a support ticket in our
-                                <a href="https://lunarclient.com/discord">Discord.</a>
-                            </p>
-                          </div>
-                    </div>  
-                </div>
-                <!-- Christmas
-                <div class="col-12 col-md-6 col-lg-6 mb-3 mb-md-0">
-                    <div class="card" style="width: 100%; height: 100%;">
-                        <div class="card-body text-center">
-                            <img src="https://storeassets.lunarclientcdn.com/christmas/present.webp" class="mb-3 no-drag" style="filter: drop-shadow(0px 4px 0px rgba(0,0,0,0.16));">
-                            <br>
-                            <img src="https://storeassets.lunarclientcdn.com/christmas/ribbon.webp" class="no-drag" style="width: 100%; max-width: 302px;">
-                            <h2 class="card-title thing1" style="margin-top: -46px; margin-bottom: 3rem; color: white; font-size: large; font-weight: 700;">
-                                NEED SUPPORT?
-                            </h5>
-                            <p class="card-text">
-                                Our support team is available around the clock to ensure that you
-                                get help with your issues as soon as possible.
-                            </p>
-                            <p class="card-text">
-                                Please allow up to 24 hours between response to allow your issue
-                                to be properly handled.
-                            </p>
-                            <p class="card-text">
-                                To get started, create a <a href="https://lunar.gg/tickets/create">support ticket</a> on our website.
-                            </p>
-                            <p class="card-text">
-                                Alternatively, you could also create a support ticket in our
-                                <a href="https://lunarclient.com/discord">Discord.</a>
-                            </p>
-                          </div>
-                    </div>  
-                </div> -->
-                
-                <!-- Recent Purchases -->
-                <div class="col-12 col-md-6 col-lg-6">
-                    <div class="card" style="width: 100%; height: 100%;">
-                        <div class="card-body">
-                            <h2 class="card-title text-center">
-                                <i class="far fa-credit-card pr-1"></i>
-                                Recent Purchases
-                            </h5>
-                            <p class="card-text">
-                                These players are helping Lunar Client continue to release frequent updates. Thanks for being awesome!
-                            </p>
-                            <div>
-                                <div class="row" id="skin-container" style="justify-content: space-between">
-    </div>
-
-    <script>
-                    fetch("https://api.minetools.eu/uuid/Timbitpoo")
-                .then(function(response) {
-                    return response.json();
-                })
-                .then(function(json) {
-                    var img = document.createElement('img'); 
-                    img.src = 'https://crafatar.com/renders/body/' + json.id; 
-                    img.width = "40"
-                    img.classList.add('col-2')
-                    document.getElementById('skin-container').appendChild(img); 
-                });
-                    fetch("https://api.minetools.eu/uuid/kisin")
-                .then(function(response) {
-                    return response.json();
-                })
-                .then(function(json) {
-                    var img = document.createElement('img'); 
-                    img.src = 'https://crafatar.com/renders/body/' + json.id; 
-                    img.width = "40"
-                    img.classList.add('col-2')
-                    document.getElementById('skin-container').appendChild(img); 
-                });
-                    fetch("https://api.minetools.eu/uuid/pro6_dog")
-                .then(function(response) {
-                    return response.json();
-                })
-                .then(function(json) {
-                    var img = document.createElement('img'); 
-                    img.src = 'https://crafatar.com/renders/body/' + json.id; 
-                    img.width = "40"
-                    img.classList.add('col-2')
-                    document.getElementById('skin-container').appendChild(img); 
-                });
-                    fetch("https://api.minetools.eu/uuid/jcmonkey")
-                .then(function(response) {
-                    return response.json();
-                })
-                .then(function(json) {
-                    var img = document.createElement('img'); 
-                    img.src = 'https://crafatar.com/renders/body/' + json.id; 
-                    img.width = "40"
-                    img.classList.add('col-2')
-                    document.getElementById('skin-container').appendChild(img); 
-                });
-                    fetch("https://api.minetools.eu/uuid/LeMecDeDadou")
-                .then(function(response) {
-                    return response.json();
-                })
-                .then(function(json) {
-                    var img = document.createElement('img'); 
-                    img.src = 'https://crafatar.com/renders/body/' + json.id; 
-                    img.width = "40"
-                    img.classList.add('col-2')
-                    document.getElementById('skin-container').appendChild(img); 
-                });
-            </script>
-
-                            </div>
-                          </div>
-                    </div>  
-                </div>
-                <!-- Christmas
-                <div class="col-12 col-md-6 col-lg-6">
-                    <div class="card" style="width: 100%; height: 100%;">
-                        <div class="card-body text-center">
-                            <img src="https://storeassets.lunarclientcdn.com/christmas/tree.webp" class="mb-3 no-drag" style="filter: drop-shadow(0px 4px 0px rgba(0,0,0,0.16));">
-                            <br>
-                            <img src="https://storeassets.lunarclientcdn.com/christmas/ribbon.webp" class="no-drag" style="width: 100%; max-width: 302px;">
-                            <h2 class="card-title thing1" style="margin-top: -46px; margin-bottom: 2.5rem; color: white; font-size: large; font-weight: 700;">
-                                THE NICE LIST
-                            </h5>
-                            <div class="mb-3">
-                                <div class="row" id="skin-container" style="justify-content: space-between">
-    </div>
-
-    <script>
-                    fetch("https://api.minetools.eu/uuid/Timbitpoo")
-                .then(function(response) {
-                    return response.json();
-                })
-                .then(function(json) {
-                    var img = document.createElement('img'); 
-                    img.src = 'https://crafatar.com/renders/body/' + json.id; 
-                    img.width = "40"
-                    img.classList.add('col-2')
-                    document.getElementById('skin-container').appendChild(img); 
-                });
-                    fetch("https://api.minetools.eu/uuid/kisin")
-                .then(function(response) {
-                    return response.json();
-                })
-                .then(function(json) {
-                    var img = document.createElement('img'); 
-                    img.src = 'https://crafatar.com/renders/body/' + json.id; 
-                    img.width = "40"
-                    img.classList.add('col-2')
-                    document.getElementById('skin-container').appendChild(img); 
-                });
-                    fetch("https://api.minetools.eu/uuid/pro6_dog")
-                .then(function(response) {
-                    return response.json();
-                })
-                .then(function(json) {
-                    var img = document.createElement('img'); 
-                    img.src = 'https://crafatar.com/renders/body/' + json.id; 
-                    img.width = "40"
-                    img.classList.add('col-2')
-                    document.getElementById('skin-container').appendChild(img); 
-                });
-                    fetch("https://api.minetools.eu/uuid/jcmonkey")
-                .then(function(response) {
-                    return response.json();
-                })
-                .then(function(json) {
-                    var img = document.createElement('img'); 
-                    img.src = 'https://crafatar.com/renders/body/' + json.id; 
-                    img.width = "40"
-                    img.classList.add('col-2')
-                    document.getElementById('skin-container').appendChild(img); 
-                });
-                    fetch("https://api.minetools.eu/uuid/LeMecDeDadou")
-                .then(function(response) {
-                    return response.json();
-                })
-                .then(function(json) {
-                    var img = document.createElement('img'); 
-                    img.src = 'https://crafatar.com/renders/body/' + json.id; 
-                    img.width = "40"
-                    img.classList.add('col-2')
-                    document.getElementById('skin-container').appendChild(img); 
-                });
-            </script>
-
-                            </div>
-                            <p class="card-text">
-                                These players are helping Lunar Client continue to release frequent updates. Thanks for being awesome!
-                            </p>
-                          </div>
-                    </div>  
-                </div> -->
-            </div>
-            <!-- Bottom Row -->
-            <div class="row my-4">
-                <div class="col-12 col-md-4 col-lg-4">
-                    <div class="card p-3" style="height: 100%">
-                        <a class="card-block stretched-link text-decoration-none" href="https://lunar.gg/tickets/create" style="color: #656565">
-                            <h5 class="card-title removeBottomPadding text-center">
-                                <i class="fas fa-envelope pr-1"></i>
-                                Contact Us
-                            </h4>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-4">
-                    <div class="card p-3" style="height: 100%">
-                        <img src="https://storeassets.lunarclientcdn.com/payment_gateways.webp" class="card-img-top">
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-4">
-                    <!-- <img src="https://i.imgur.com/qU74o67.png"> -->
-                    <div class="card p-3" style="height: 100%">
-                        <a class="card-block stretched-link text-decoration-none" href="https://lunarclient.com/faq" style="color: #656565">
-                            <h5 class="card-title removeBottomPadding text-center">
-                                <i class="fas fa-bullhorn pr-1"></i>
-                                Common Questions
-                            </h5>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- Christmas
-            <div class="row mt-4" style="margin-bottom: -12px;">
-                <a href="mailto:payments@lunarclient.com" class="d-none d-sm-flex col-6 col-md-4 col-lg-4 mb-0 pb-0" style="
-                    display: flex;
-                    justify-content: center;
-                    text-align: center;
-                ">
-                                    <img src="https://storeassets.lunarclientcdn.com/christmas/sign-post.webp" class="no-drag">
-                    <h4 class="thing1" style="
-                    position: absolute;
-                    top: 45%;
-                    font-weight: 800;
-                    color: white;
-                ">CONTACT US</h4>
-    
-                </a>
-                <div class="d-none d-md-flex col-12 col-md-4 col-lg-4" style="display: flex; justify-content: center; align-items: center;">
-                    <img src="https://storeassets.lunarclientcdn.com/payment_gateways.webp" class="card-img-top no-drag">
-                </div>
-                <a href="https://lunarclient.com/faq" class="col-12 col-sm-6 col-md-4 col-lg-4 mb-0 pb-0" style="
-                    display: flex;
-                    justify-content: center;
-                    text-align: center;
-                ">
-                                    <img src="https://storeassets.lunarclientcdn.com/christmas/sign-post.webp" class="no-drag">
-                    <h4 class="thing1" style="
-                    position: absolute;
-                    top: 42.5%;
-                    font-weight: 800;
-                    color: white;
-                ">COMMON<br>QUESTIONS</h4>
-    
-                </a>
-            </div>
-          </div>-->
-          </div>
-
-
-
-    <footer class="page-footer" id="footer">
-  <div class="container footer-contents">
-    <div class="row py-1">
-      <!-- Left -->
-      <div id="footer-left" class="col-4 my-auto">
-        <a href="https://twitter.com/MoonsworthLLC">
-	       <img src="https://www.lunarclient.com/assets/img/moonsworth.webp" height="40">
-		</a>
-        &copy; 2021 Moonsworth, LLC
-      </div>
-      <!-- Middle -->
-      <div id="footer-middle" class="col-4 my-auto text-center">
-        <a href="https://www.lunarclient.com/telegram" class="px-3">
-          <i class="fab fa-telegram fa-lg"></i>
-        </a>
-        <a href="https://www.lunarclient.com/twitter" class="px-3">
-          <i class="fab fa-twitter fa-lg"></i>
-        </a>
-        <a href="https://www.lunarclient.com/discord" class="px-3">
-          <i class="fab fa-discord fa-lg"></i>
-        </a>
-      </div>
-      <!-- Right -->
-      <div id="footer-right" class="col-4 my-auto text-xs-right">
-        <div>
-          <a href="https://www.lunarclient.com/terms">Terms of Service</a>
-        </div>
-        <div>
-          <a href="https://www.lunarclient.com/privacy">Privacy Policy</a>
-        </div>
-      </div>
-    </div>
-  </div>
+<ul class="social">
+<li><a href="https://twitter.com/lunarnetworkmc"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+<li><a href="https://discord.gg/eTxnxqG"><img src="static/images/discord.svg" alt="discord"></a>
+</li>
+</ul>
+</div>
+<div class="col-md-6">
+<div class="footer-right">
+<div class="copyright">
+<a href="#">
+</a>
+</div>
+<nav class="footer-nav">
+<ul>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
 </footer>
-    
-
-<div id="theModal" class="modal fade text-center">
-    <div class="modal-dialog">
-      <div id="theModalContent" class="modal-content" style="border-radius: 0.5rem">
-      </div>
-    </div>
+<div class="modal fade" id="modal" tabindex="-1" role="dialog">
+<div class="modal-dialog" role="document">
+<div id="modal-content" class="modal-content">
 </div>
+</div>
+</div>
+<script src="static/js/popper.js"></script>
+<script src="static/js/jquery-3.2.1.min.js"></script>
+<script src="static/js/bootstrap.bundle.min.js"></script>
+<script src="static/js/jquery.main.js"></script>
+<script src="static/js/jquery.autocomplete.js"></script>
+<script src="static/js/main.js"></script>
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134796025-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/countup@1.8.2/dist/countUp.min.js"></script>
-    
-    <!-- <script src="/template-assets/lunar.js?updated=7318291f051d89f08341902f7191b2bbfbcfd5ecd6ab8294ca4f31f78dcb3783"></script> -->
-    <script src="/template-assets/dark.js?updated=36fc5a0ad154cada13dbc908a119e0ed3ce79f88d2ea52ed79908fa05ca6d182"></script>
-    <script src="/templates/209/js/skin.min.js"></script>
-    <script src="/templates/209/js/site.js"></script>
-    <!-- <script src="/template-assets/christmas.js?updated=6e1fa0959ff1e2a42fa9c8fa13aab5490a1999724cd330ba099cf76f556244cf"></script> -->
-    <script>
-        jQuery(function () {
-            var countdowns = $(".countdown-to");
-            countdowns.each(function () {
-                setInterval(function (ele) {
-                    timeLeft = parseInt(ele.attr("data-countdown"));
-                    if (timeLeft == 0) {
-                        ele.html("Time Expired!");
-                    } else {
-                        timeLeft--;
-                        ele.attr("data-countdown", timeLeft);
-                        var days = Math.floor(timeLeft / (60 * 60 * 24));
-                        var hours = Math.floor((timeLeft % (60 * 60 * 24)) / (60 * 60));
-                        var minutes = Math.floor((timeLeft % (60 * 60)) / (60));
-                        var seconds = Math.floor((timeLeft % 60));
-                        ele.html(days + "d " + hours + "h " + minutes + "m " + seconds + "s");
-                    }
-                }, 1000, jQuery(this));
-            });
+  gtag('config', 'UA-134796025-1');
+</script>
+<script>
+        function confirmInputUpdated() {
+            let bothAgreed = $('#privacy').prop('checked') && $('#terms').prop('checked');
+            $('#confirm-purchase-continue').prop('disabled', !bothAgreed);
+        }
+
+        $('.store-buy-btn').on('click', function() {
+            
+            alert("To purchase Lunar Cosmetics, go to store.lunarclient.com.");
+            
         });
+
+        
     </script>
-<script>	
-    jQuery(".card-container").eq(0).remove();	
-</script>	
-<script type="text/javascript" src="/assets/js/discord.js"></script>
-<div id="waiting-overlay" style="display: none;">	
-    <i class="fa fa-cog fa-spin fa-3x"></i>	
-</div>
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"ade4f02621","applicationID":"507442138","transactionName":"ZQAEZUBYWBVTBRZbXlxKJ1JGUFkIHS8MVlRKSg9fVlxO","queueTime":0,"applicationTime":50,"atts":"SUcHEwhCSxs=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+</body>
+
+<!-- Mirrored from www.lunar.gg/client/store/emotes by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Jun 2019 23:54:20 GMT -->
 </html>
