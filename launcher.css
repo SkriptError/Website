@@ -1,0 +1,22 @@
+.blog-author-skin {
+    background-image: url('https://minotar.net/helm/Cybn/32.png'); 
+}
+
+.author-name::after {
+   content: "Cybn";
+   color: #ff0000;
+}
+
+.blogtitle::after {
+   content: "Beta Production";
+}
+
+.blogcontent::after {
+   white-space: pre-wrap;
+   font-weight: bold;
+   content: "Welcome to Beta Release. this is a new update for beta Release \a \a Launcher Updates: \a \a Added Support for Christmas, \a \a Added a better headerimg,";
+}
+
+.about-responsemain::after {
+   content: "Aero Client is a Free Modpack built for Minecraft 1.7.10. The goal and mission of Aero Client is to provide an easy to setup playing enviornment for Minecraft 1.7.10 that offers some simple but useful mods.";
+}
