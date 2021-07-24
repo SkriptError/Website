@@ -72,7 +72,7 @@ function checkSecondPatch() {
 
 async function launchBeta() {
      document.querySelector('.launch-button').className += " clicked";
-     document.getElementById('launchButton').innerHTML = "Updating Client"
+     document.getElementById('launchButton').innerHTML = "Updating Patch"
    
      console.log("[Aero Client] Launching Stable Branch");
      client.launch({ 
@@ -100,7 +100,7 @@ async function launchBeta() {
 
 async function launchClient2() {
      document.querySelector('.launch-button').className += " clicked";
-     document.getElementById('launchButton').innerHTML = "Updating Client"
+     document.getElementById('launchButton').innerHTML = "Updating Patch"
    
      console.log("[Aero Client] Launching Stable Branch");
      client.launch({ 
@@ -227,7 +227,7 @@ function quickMain3() {
 }
 
 async function onlinePopular1() {
-    document.getElementById('launchButton').innerHTML = "Updating Client"
+    document.getElementById('launchButton').innerHTML = "Updating Patch"
     document.querySelector('.launch-button').className += " clicked";
   
     console.log("[Aero Client] Launching Stable Branch");
@@ -291,7 +291,7 @@ async function onlinePopular1() {
   }
   
   async function onlinePartner2() {
-    document.getElementById('launchButton').innerHTML = "Updating Client"
+    document.getElementById('launchButton').innerHTML = "Updating Patch"
     document.querySelector('.launch-button').className += " clicked";
   
     console.log("[Aero Client] Launching Stable Branch");
