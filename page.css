@@ -476,29 +476,29 @@ body {
 }
 @-webkit-keyframes color {
   0% {
-    stroke: #70c542;
+    stroke: #3b00d1;
   }
   40% {
-    stroke: #70c542;
+    stroke: #3b00d1;
   }
   66% {
-    stroke: #70c542;
+    stroke: #3b00d1;
   }
   80%, 90% {
-    stroke: #70c542;
+    stroke: #3b00d1;
   }
 }
 @keyframes color {
   0% {
-    stroke: #70c542;
+    stroke: #3b00d1;
   }
   40% {
-    stroke: #70c542;
+    stroke: #3b00d1;
   }
   66% {
-    stroke: #70c542;
+    stroke: #3b00d1;
   }
   80%, 90% {
-    stroke: #70c542;
+    stroke: #3b00d1;
   }
 }
