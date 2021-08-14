@@ -1,19 +1,19 @@
 [
   {
-    "title": "Bukkit API Updates!",
-    "description": "Our bukkit api has been updated! We keep working on it to make it better and hopefully it will be out Soon!",
+    "title": "Bukkit API Updates",
+    "description": "Our bukkit api has been updated! Check it out at https://github.com/TecknixClient/BukkitAPI.",
     "thumbnail": "https://cdn.discordapp.com/attachments/829083223278616606/865802445841498162/bg.png",
     "link": "https://tecknix.com"
   },
   {
-    "title": "Cosmetics Update",
-    "description": "We are also working on Cosmetics in the client ",
+    "title": "Cosmetics Store Update",
+    "description": "Check it out at https://store.tecknix.com!",
     "thumbnail": "https://cdn.discordapp.com/attachments/836222057376120883/862869257443213322/chrome_lMPFAZmdot.png",
     "link": "https://tecknix.com"
   },
   {
     "title": "Tecknix Discord",
-    "description": "Join our discord - discord.gg/wFmFSYXYq5!",
+    "description": "Join our discord - discord.gg/Tecknix!",
     "thumbnail": "https://cdn.discordapp.com/attachments/765357872120201217/876187401272324156/unknown.png",
     "link": "https://discord.tecknix.com"
   }
