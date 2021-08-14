@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Bukkit API Updates TEST",
+    "description": "Our bukkit api has been updated! Check it out at https://github.com/TecknixClient/BukkitAPI.",
+    "thumbnail": "https://cdn.discordapp.com/attachments/829083223278616606/865802445841498162/bg.png",
+    "link": "https://tecknix.com"
+  },
+  {
+    "title": "Cosmetics Store Update TEST",
+    "description": "Check it out at https://store.tecknix.com!",
+    "thumbnail": "https://cdn.discordapp.com/attachments/836222057376120883/862869257443213322/chrome_lMPFAZmdot.png",
+    "link": "https://tecknix.com"
+  },
+  {
+    "title": "Tecknix Discord TEST",
+    "description": "Join our discord - discord.gg/Tecknix!",
+    "thumbnail": "https://cdn.discordapp.com/attachments/836222057376120883/862869501774004255/DiscordCanary_TOYoOVlbIT.png",
+    "link": "https://discord.tecknix.com"
+  }
+]
