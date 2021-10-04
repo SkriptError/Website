@@ -1,9 +1,9 @@
 .blog-author-skin {
-    background-image: url('https://minotar.net/helm/Cybn/32.png'); 
+    background-image: url('https://minotar.net/helm/ArcaneCiCi/32.png'); 
 }
 
 .author-name::after {
-   content: "Cybn";
+   content: "ArcaneCiCi";
    color: #ff0000;
 }
 
