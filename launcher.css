@@ -1,22 +1,20 @@
 .blog-author-skin {
-    background-image: url('https://minotar.net/helm/ArcaneCiCi/32.png'); 
+    background-image: url('https://minotar.net/helm/58025126-17c2-4fe3-bbc9-81519341f7d6/32.png'); 
 }
 
 .author-name::after {
-   content: "ArcaneCiCi";
-   color: #ff0000;
+   content: "ArcaneCC";
+   color: red;
 }
 
 .blogtitle::after {
-   content: "Beta Production";
+   content: "Local Test Post";
 }
 
-.blogcontent::after {
-   white-space: pre-wrap;
-   font-weight: bold;
-   content: "Welcome to Beta Release. this is a new update for beta Release \a \a Launcher Updates: \a \a Added Support for Christmas, \a \a Added a better headerimg,";
+.news-content::after {
+   content: "Hey everyone! We know we've been quiet about our 1.8.9 release date, but we're back. We're happy to announce that we will be doing a public beta for Aero Client 1.8.9! This public beta will take place sometime early this month, and will last one week, and will change significantly throughout the week of the beta. \a \a We also want to thank you all for over 400 users on Aero Client, we've been hard at work to make the client a fun experience for everyone, there will be only more to come. \a \a We've got huge plans for Aero Client that will be release in the coming days. Stay tuned.";
 }
 
 .about-responsemain::after {
-   content: "Aero Client is a Free Modpack built for Minecraft 1.7.10. The goal and mission of Aero Client is to provide an easy to setup playing enviornment for Minecraft 1.7.10 that offers some simple but useful mods.";
+   content: "Aero Client is a Free Modpack built for Minecraft 1.7.10. The goal and mission of Aero Client is to create a non-toxic and safe playing environment.";
 }
