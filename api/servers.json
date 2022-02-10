@@ -6,5 +6,9 @@
    { 
       "ip":"hypixel.net",
       "name": "Hypixel"
+   },
+   { 
+      "ip":"cavepvp.org",
+      "name": "CavePvP"
    }
 ]
