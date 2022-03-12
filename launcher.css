@@ -8,7 +8,7 @@
 }
 
 .blogtitle::after {
-   content: "Local Test Post";
+   content: "Post Test";
 }
 
 .news-content::after {
