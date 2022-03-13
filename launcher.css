@@ -2,8 +2,8 @@
     background-image: url('https://minotar.net/helm/58025126-17c2-4fe3-bbc9-81519341f7d6/32.png'); 
 }
 
-.author-name::after {
-   content: "ArcaneCC";
+.blogauthor::after {
+   content: "Macguy8";
    color: red;
 }
 
