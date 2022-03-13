@@ -8,7 +8,7 @@
 }
 
 .blogtitle::after {
-   content: "Post Test";
+   content: "1.8.9 Release Dates";
 }
 
 .blog-content::after {
