@@ -4,7 +4,7 @@
 
 .blogauthor::after {
    content: "Macguy8";
-   color: red;
+   color: grey;
 }
 
 .blogtitle::after {
